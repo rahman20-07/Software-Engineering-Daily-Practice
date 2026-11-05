@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravino Kitchen | Food Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: rgb(139, 69, 19);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 20px;
+        }
+        header p{
+            margin-bottom: 20px;
+        }
+        body {
+            background-color: rgb(248, 244, 237);
+        }
+        
+        div section {
+            background-color: rgb(255, 248, 220);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            /* border: 1px dotted rgb(252, 139, 129); */
+            box-shadow: 0px 0px 1px rgba(10, 10, 10, 0.722);
 
+            /* X-offset | Y-offset | Blur | Spread | Color */
+            /* box-shadow: 0px 1px 5px 2px rgba(10, 10, 10, 0.09); */
+            
+        }
+        div section h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            width: 100%;
+            max-width: 250px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        div section p {
+            margin-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .card-3 .lil {
+            font-size: 13px;
+            color: black;
+        }
+        footer {
+            background-color: rgb(26,26,26);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        footer h3 {
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 15px;
+        }
+        footer p{
+            margin: 15px;
+        }
+        
+        footer .fp2 {
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Bravino Kitchen</h1>
+        <p>Order Delicious Food Anytime, Anywhere</p>
+    </header>
+
+    <main>
+        <section class="card-1">
+            <h2>Veg Burger</h2>
+            <img src="./images/Veggie-Burger.JPG" alt="Burger">
+            <p>Enjoy our <strong>Best Selling Burger</strong> made with fresh vegetables and special sauces.</p>
+            <p><mark>Today's Special Offer</mark></p>
+            <p>Old Price :<del>₹199</del></p>
+            <!-- <p>New Price :<u>₹149</u></p> -->
+            <p>New Price: <ins>₹149</ins></p>
+        </section>
+
+
+        <section class="card-2">
+            <h2>Italian Pizza</h2>
+            <!-- <img src="./images/italian_pizza.JPG" alt="Pizza"> -->
+            <img src="./images/Veggie-Burger.JPG"
+                alt="Vegetable burger with fresh toppings">
+            <p><em>Cheesy and Crispy Pizza</em> loaded with premium toppings.</p>
+            <p><u>Free Home Delivery Available</u></p>
+            <p>Old Price : <del>₹499</del></p>
+            <p>New Price : <u>₹399</u></p>
+
+        </section>
+
+
+        <section class="card-3">
+            <h2>Chocolate Cake</h2>
+            <img src="./images/Matildas-Chocolate-Cake.jpg" alt="Chocolate-Cake">
+            <p>Soft and delicious chocolate cake prepared with premium ingredients.</p>
+            <p class="lil">* Limited Time Offer Available</p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Thank You for Choosing Bravino Kitchen ❤️</h3>
+        <p>Serving Happiness One Bite at a Time 🍔🍕🍰</p>
+        <p class="fp2">© 2026 Bravino Kitchen. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
