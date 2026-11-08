@@ -65,7 +65,7 @@ The goal is to build strong fundamentals and gradually turn them into practical 
 software-engineering-daily-practice/
 │
 ├── frontend/
-│   ├── html-css/
+│   ├── HTML-CSS-Frontend-Practice/projects/
 │   ├── javascript/
 │   ├── bootstrap/
 │   └── react/
