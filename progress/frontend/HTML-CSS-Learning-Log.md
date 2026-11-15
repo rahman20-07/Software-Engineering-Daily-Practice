@@ -12,4 +12,5 @@ This file tracks my ongoing frontend development learning and practical implemen
 | 06 | Frontend (HTML & CSS) | Gaming product cards, HTML buttons, CSS Flexbox layout, `flex-direction`, list styling and image sizing. Practical implementation: Elite Gamer's Hub webpage. | Completed (Code reviewed) |
 | 07 | Frontend (HTML & CSS) | CSS Grid (`grid-template-columns`, `repeat()`, `auto-fit`, `minmax()`, `fr`), responsive media queries, sticky positioning, `z-index`, smooth scrolling and `object-fit: contain`. Practical implementation: ShopFlex Product Dashboard. | Completed (Code reviewed) |
 | 08 | Frontend (HTML & CSS) | HTML tables: `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`, nested tables, `colspan` and `rowspan`. CSS: `border-collapse` and `vertical-align`. Practical implementation: Hospital Management System webpage. | Completed (Code reviewed) |
+| 09 | Frontend (HTML) | Description lists (`<dl>`, `<dt>`, `<dd>`), nested definition lists, ordered lists (`<ol>`, `type`), and content grouping with `<fieldset>` and `<legend>`. Practical implementation: HTML List practice exercises. | Completed (Code reviewed) |
 
