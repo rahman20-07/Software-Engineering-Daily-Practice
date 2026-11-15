@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(222, 233, 252);
+            padding: 0 70px;
+            font-family: Arial;
+        }
+        th {
+            background-color: rgb(12, 166, 233);
+            font-size: 22px;
+            color: black;
+            font-weight: bold;
+        }
+        td {
+            background-color: white;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+                table {
+            border-collapse: collapse;
+        }
+        tfoot td{
+             background-color: rgb(12, 166, 233);
+        }
+
+    </style>
+</head>
+<body>
+    <table width="100%" border="1" frame="box" rule="all" cellpadding="20px">
+        <thead style="text-align: center;">
+            <tr>
+                <th colspan="2" >ELIPSE HOSPITAL MANAGEMENT SYSTEM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 50%;">
+                    <table style="width: 100%;" align="center" border="1" frame="box" rule="all" cellpadding="5px">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Doctor Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>D101</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Dr.Rahul</td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Category</td>
+                            </tr>
+                            <tr>
+                                <td>Experience</td>
+                                <td>10 Years</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: middle;">Qualifications</td>
+                                <td>
+                                    <table style="width: 100%;" align="center" border="1" frame="box" rule="all" cellpadding="5px">
+                                        <thead>
+                                            <tr>
+                                                <th>Degree</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MBBS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DM</td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td style="width: 50%;">
+                    <table style="width: 100%;"  border="1" frame="box" rule="all" cellpadding="5px">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Patient Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>P201</td>
+                            </tr>
+
+                            <tr>
+                                <td>Name</td>
+                                <td>Allen</td>
+                            </tr>
+
+                            <tr>
+                                <td>Age</td>
+                                <td>22</td>
+                            </tr>
+
+                            <tr>
+                                <td>Disease</td>
+                                <td>Viral Fever</td>
+                            </tr>
+
+                            <tr>
+                                <td>Blood Group</td>
+                                <td>O+</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!--From hre 2nd Row Starts-->
+            <tr>
+                <td colspan="2">
+                        <table  style="width: 100%;" border="1" frame="box" rule="all" cellpadding="5px">
+                            
+                                <tr>
+                                    <th colspan="5">Appointment Details</th>
+                                </tr>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Room</th>
+                                    <th>Status</th>
+                                    <th rowspan="3" >
+                                        <table style="width: 100%;"  border="1" >
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Fee Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Consultation</td>
+                                                    <td>₹1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Medicine</td>
+                                                    <td>₹1200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tests</td>
+                                                    <td>₹300</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td>₹2500</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </th>
+                                </tr>
+                           
+                                <tr>
+                                    <td>10-July</td>
+                                    <td>10:30 AM</td>
+                                    <td>203</td>
+                                    <td>Confirmed</td>
+                                </tr>
+
+                                <tr>
+                                    <td>11-July</td>
+                                    <td>11:00 AM</td>
+                                    <td>205</td>
+                                    <td>Pending</td>
+                                </tr>
+                        
+                        </table>
+                </td>
+            </tr>
+
+
+            <!--3rd Coloumn Starts here-->
+            <tr>
+                <td colspan="2">
+                    <table style="width: 100%;" border="1" frame="box" rule="all" cellpadding="5px" >
+                        <thead>
+                            <tr>
+                                <th colspan="3">Medical Test Report</th>
+                            </tr>
+                            <tr>
+                                <th>Test</th>
+                                <th>Result</th>
+                                <th>Normal Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Blood Test</td>
+                                <td>Normal</td>
+                                <td>4.5-5.5</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sugar</td>
+                                <td>120 mg/dL</td>
+                                <td>80-140</td>
+                            </tr>
+
+                            <tr>
+                                <td>ECG</td>
+                                <td>Normal</td>
+                                <td>4.5-5.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" border="1" align="center">Generated By : Hospital ERP System</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
