@@ -1,0 +1,331 @@
+/* 1. GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2. BODY AND GLOBAL STYLING */
+/* ============================ */
+
+body {
+    background-color: rgb(16, 16, 28);
+    font-family: Arial, sans-serif;
+    padding: clamp(12px, 3vw, 25px);
+    color: white;
+}
+
+
+/* 3. HEADER AND NAVIGATION */
+/* ======================== */
+
+/* Header container */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: #1B1B2E;
+    border-radius: 12px;
+}
+
+/* Website logo */
+
+.site-header h1 {
+    color: rgb(189, 145, 255);
+}
+
+/* Navigation container */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation links */
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    transition: color 0.35s ease;
+}
+
+/* Navigation hover */
+
+.navigation a:hover {
+    color: rgb(189, 145, 255);
+}
+
+
+/* 4. MAIN CONTENT AND SEARCH SECTION */
+/* ================================== */
+
+/* Search label */
+
+.search-box-label {
+    font-size: 20px;
+    color: rgb(189, 145, 255);
+}
+
+/* Search input */
+
+.search-box {
+    width: 100%;
+    padding: 16px;
+    margin: 20px 0;
+
+    background-color: #1B1B2E;
+    color: white;
+
+    border: 1px solid rgb(131, 130, 130);
+    border-radius: 12px;
+
+    font-size: 1rem;
+
+    transition: border-color 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Search input focus */
+
+.search-box:focus {
+    background-color: #151540;
+    border-color: rgb(158, 113, 255);
+
+    outline: 2px solid rgb(158, 113, 255);
+    outline-offset: 2px;
+}
+
+
+/* 5. FEATURED SECTION */
+/* ================== */
+
+/* Feature container */
+
+.feature {
+    background-color: #322b4f;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Feature heading */
+
+.feature h2 {
+    color: white;
+}
+
+/* Feature description */
+
+.feature p {
+    padding: 20px;
+    color: rgb(200, 197, 218);
+}
+
+/* Feature button */
+
+.feature-button {
+    padding: 15px 20px;
+    margin-left: 20px;
+
+    border-radius: 40px;
+    border: none;
+
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    background-color: rgb(158, 113, 255);
+
+    transition: background-color 0.4s ease,
+                color 0.4s ease;
+}
+
+/* Feature button hover */
+
+.feature-button:hover {
+    background-color: rgb(221, 213, 213);
+    color: rgb(158, 113, 255);
+}
+
+
+/* 6. PLAYLIST SECTION */
+/* =================== */
+
+/* Playlist container */
+
+.playlist {
+    background-color: #3d365b22;
+    border-radius: 12px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Playlist heading */
+
+.playlist-heading {
+    color: rgb(158, 113, 255);
+    padding: 20px 2% 0;
+}
+
+
+/* 7. SONG LIST - GRID CONTAINER */
+/* ============================= */
+
+/* Song list layout */
+
+.song-list {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: 16px;
+    padding: 20px;
+}
+
+
+/* 8. SONG CARD */
+/* ============ */
+
+/* Individual song card */
+
+.song-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 12px;
+    padding: 15px;
+
+    border-radius: 12px;
+    background-color: #322b4f;
+    border: 1px solid rgb(131, 130, 130);
+}
+
+
+/* 9. SONG INFORMATION */
+/* =================== */
+
+/* Song information container */
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Song title */
+
+.song-info h3 {
+    white-space: nowrap;
+}
+
+/* Song artist and category */
+
+.song-card p {
+    font-size: 12px;
+    color: rgb(200, 197, 218);
+}
+
+
+/* 10. SONG PLAY BUTTON */
+/* ==================== */
+
+.play-button {
+    background-color: rgb(158, 113, 255);
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 100%;
+    border: none;
+
+    color: white;
+}
+
+
+/* 11. BOTTOM MUSIC PLAYER */
+/* ======================= */
+
+/* Music player container */
+
+.bottom-player {
+    background-color: #322b4f;
+
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: rgb(200, 197, 218);
+}
+
+/* Now playing text */
+
+.bottom-player p {
+    text-align: center;
+}
+
+/* Music player button */
+
+.player-button {
+    margin: 20px;
+    padding: 15px 20px;
+
+    border-radius: 18px;
+    border: none;
+
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    background-color: rgb(158, 113, 255);
+
+    transition: background-color 0.8s ease,
+                color 0.8s ease;
+}
+
+/* Music player button hover */
+
+.player-button:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(158, 113, 255);
+}
+
+
+/* 12. RESPONSIVE DESIGN  */
+/* ====================== */
+
+@media (max-width: 600px) {
+
+    /* Header responsiveness */
+
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Navigation responsiveness */
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
