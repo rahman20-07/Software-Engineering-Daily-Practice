@@ -74,6 +74,7 @@ More projects will be added as I continue practicing and learning new concepts.
 My daily progress is documented separately in the repository:
 
 [JavaScript & Bootstrap Learning Log](../../../progress/JavaScript-Bootstrap-Learning-Log.md)
+https://github.com/rahman20-07/Software-Engineering-Daily-Practice/edit/mainprogress/frontend/JavaScript-Bootstrap-Learning-Log.md
 
 The learning log records the topics practiced, the concepts implemented, and the progress made over time.
 
