@@ -15,3 +15,5 @@ Each entry records the area of practice, the topic covered, and the current comp
 | Day | Area | Topic | Status |
 |---|---|---|---|
 | Day 01 | Bootstrap | Responsive layouts, grid system, components, and utility classes through the MediCare Hospital Website | Completed |
+| Day 02 | Bootstrap & JavaScript | Student Result Portal — Bootstrap cards, responsive grid, utility classes, JavaScript events, confirmation dialogs, conditional statements, and DOM manipulation | Completed |
+
