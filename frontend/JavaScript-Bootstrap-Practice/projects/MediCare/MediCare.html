@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>MediCare</title>
+    <style>
+        .site-footer {
+            background: linear-gradient(to right, #0d6efd, #084298);
+        }
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 25px;
+            transition: 0.5s;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02);
+        }
+        body {
+            background: #f4f7fc;
+        }
+
+        .card-img-top {
+            height: 340px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .card {
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .footer-link {
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .footer-link:hover {
+            color: #ffd43b !important;
+            transform: translateX(8px);
+        }
+
+        .social-icons a {
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffd43b !important;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+            <div class="container">
+                <!-- Brand / Logo -->
+                <a class="navbar-brand fs-3 fw-bold" href="#">
+                    <i class="bi bi-hospital me-1"></i> MediCare
+                </a>
+                <!-- Mobile Hamburger Toggle Button -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Collapsible Navigation Links -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#doctors">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <!--First Section-->
+        <!-- First Section: Hero -->
+        <section class="hero-healthcare my-5 py-4">
+            <div class="row align-items-center g-5">
+                
+                <!-- Left Column: Text & Buttons -->
+                <div class="col-md-6 pe-lg-5">
+                    <h1 class="display-3 fw-bold text-primary mb-4">
+                        24/7 Healthcare Services
+                    </h1>
+                    <p class="text-secondary lh-lg mb-4">
+                        Providing quality treatment with experienced doctors and advanced medical facilities. Your health is our priority.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#appointment" class="btn btn-primary btn-lg rounded-pill px-4">
+                            Book Appointment
+                        </a>
+                        <a href="#services" class="btn btn-outline-primary btn-lg rounded-pill px-4">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-md-6">
+                    <img src="./images/Hospital2.jpg" alt="Hospital Doctors" class="hero-image img-fluid shadow border-0 rounded-4">
+                </div>
+
+            </div>
+        </section>
+
+        <!--Second Section-->
+        <section class="Our-services" id="services">
+            <h2 class="h2 fw-bold text-primary text-center my-3">Our Services</h2>
+            <!-- 1. Row Wrapper: Cards ko ek line mein lane aur gap dene ke liye -->
+            <div class="row g-4 g-lg-5">
+                <!-- 2. Column Wrapper: Screen ko 3 equal parts (12 / 4 = 3) mein baantne ke liye -->
+
+                <!-- Card-1 Emergency-->
+                <div class="col-md-4">
+                    <article class="service-card card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-heart-pulse-fill text-danger fs-1 mb-3 d-block"></i>
+                            <h3 class="h4 fw-bold">Emergency</h3>
+                            <p class="text-secondary small mb-4">24 Hours Emergency Care Available</p>
+                            <button type="button" class="btn btn-danger rounded-pill px-4">View More</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!--Card-2 Pharmacy-->
+                <div class="col-md-4">
+                    <article class="service-card card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+                        <div class="card-body">
+                            <i  class="bi bi-capsule text-success fs-1 mb-3 d-block"></i>
+                            <h3 class="h4 fw-bold">Pharmacy</h3>
+                            <p class="text-secondary small mb-4">Medicines Available All Time</p>
+                            <button type="button" class="btn btn-success rounded-pill px-4">View More</button>
+                        </div>
+                    </article>
+                </div>
+
+
+                <!--Card-3 Ambulance-->
+                <div class="col-md-4">
+                    <article class="services-card card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-truck text-primary fs-1 mb-3 d-block"></i>
+                            <h3 class="h4 fw-bold">Ambulance</h3>
+                            <p class="text-secondary small mb-4">Fast Ambulance Services</p>
+                            <button type="button" class="btn btn-primary rounded-pill px-4">View More</button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Our-Doctors my-4" id="doctors">
+            <h2 class="section-title text-center text-primary fw-bold mb-5">Our Doctors</h2>
+            <div class="row g-4 g-lg-5">
+
+                <!-- Doc-Card-1 -->
+                <div class="col-md-4">
+                    <article class="doctor-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                        <img src="./images/doctor_akshaya.jpg" class="card-img-top" alt="Dr. Akshaya">
+                        <div class="card-body p-4">
+                            <h3 class="h4 fw-bold mb-2">
+                                Dr.Akshaya
+                                <span class="badge bg-success fs-6 d-table mx-auto mt-2">10 Years Exp</span>
+                            </h3>
+                            <p class="text-secondary mb-4">Cardiologist</p>
+                            <button type="button" class="btn btn-primary rounded-pill px-4">Book Now</button>
+                        </div>
+                        
+                    </article>
+                </div>
+
+                <!-- Doc-Card-2 -->
+                 <div class="col-md-4">
+                    <article class="doctor-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                        <img src="./images/dr_manoj.jpg" class="card-img-top" alt="Dr.Manoj">
+                        <div class="card-body p-4">
+                            <h3 class="h4 fw-bold mb-2 ">
+                                Dr. Manoj
+                                <span class="badge bg-warning fs-6 d-table mx-auto mt-2">8 Years Exp</span>
+                            </h3>
+                            <p class="text-secondary mb-4">Dentist</p>
+                            <button type="button" class="btn btn-primary rounded-pill px-4">Book Now</button>
+                        </div>
+                    </article>
+                 </div>
+
+
+
+                  <!-- Doc-Card-2 -->
+                 <div class="col-md-4">
+                    <article class="doctor-card card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center">
+                        <img src="./images/dr.Bharath.jpg" class="card-img-top" alt="Dr.Bharat">
+                        <div class="card-body p-4" >
+                            <h3 class="h4 fw-bold mb-2 ">
+                                Dr. Bharat
+                                <span class="badge bg-danger fs-6 d-table mx-auto mt-2">Senior</span>
+                            </h3>
+                            <p class="text-secondary mb-4">Neurologist</p>
+                            <button type="button" class="btn btn-primary rounded-pill px-4">Book Now</button>
+                        </div>
+                    </article>
+                 </div>
+            </div>
+        </section>
+
+        <section class="emergency-banner  my-5">
+            <div class="alert alert-danger d-flex justify-content-between align-items-center p-4 rounded-3 mb-0" role="alert">
+                <div>
+                    <h3 class="h4 fw-bold mb-1">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        Emergency Hotline
+                    </h3>
+                    <p class="mb-0">Available 24x7 for critical care</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger rounded-pill px-4 py-2">Call Now</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="stats-section  my-5 py-4">
+            <h2 class="section-title text-center text-primary fw-bold mb-5">Hospital Statistics</h2>
+            <div class="row g-4 g-lg-5">
+
+                <!-- Stat 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="stat-card card h-100 border-0 shadow-sm rounded-4 text-center py-4">
+                        <div class="card-body">
+                            <p class="display-6 fw-bold text-primary mb-2">120+</p>
+                            <h3 class="h5 fw-semibold text-dark mb-0">Doctors</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Stat 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="stat-card card h-100 border-0 shadow-sm rounded-4 text-center py-4">
+                        <div class="card-body">
+                            <p class="display-6 fw-bold text-success mb-2">5000+</p>
+                            <h3 class="h5 fw-semibold text-dark mb-0">Patients</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="stat-card card h-100 border-0 shadow-sm rounded-4 text-center py-4">
+                        <div class="card-body">
+                            <p class="display-6 fw-bold text-danger mb-2">50+</p>
+                            <h3 class="h5 fw-semibold text-dark mb-0">Departments</h3>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+                <!-- Stat 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="stat-card card h-100 border-0 shadow-sm rounded-4 text-center py-4">
+                        <div class="card-body">
+                            <p class="display-6 fw-bold text-warning mb-2">24x7</p>
+                            <h3 class="h5 fw-semibold text-dark mb-0">Emergency</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="appointment-section my-5 py-5" id="appointment">
+            <h2 class="section-title text-center text-primary fw-bold mb-5">Book Appointment</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-12 col-lg-9">
+                    <div class="card border-0 shadow-sm rounded-4">
+
+                        <div class="card-body p-4 p-md-5 ">
+                            <form action="#">
+                                <input type="text" class="form-control mb-4" placeholder="Patient Name" name="name" required>
+
+                                <input type="email" class="form-control mb-4" placeholder="Email Address" required name="email">
+
+                                <select class="form-select mb-4" name="department" aria-label="Select Department" required>
+                                    <option value="" selected disabled>Select Department</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Dental">Dental</option>
+                                    <option value="Neurology">Neurology</option>
+                                    <option value="Orthopedic">Orthopedic</option>
+                                </select>
+
+                                <input type="date" class="form-control mb-4" name="date" aria-label="Appointment Date" required>
+
+                                <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold">Book Appointment</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer class="site-footer text-white pt-5 pb-3 mt-5" id="contact">
+            <div class="container pt-3">
+                <div class="row gy-4">
+                    <!-- Column 1 : About -->
+                     <div class="col-md-4">
+                        <h3 class="h4 fw-bold mb-3">
+                            <i class="bi bi-hospital me-2"></i>
+                            MediCare Hospital
+                        </h3>
+                        <p class="text-white-50 lh-lg">
+                            Providing world-class healthcare services with experienced doctors and advanced facilities. Your health is our priority.
+                        </p>
+                     </div>
+
+                     <!-- Column 2: Quick Links -->
+                      <div class="col-md-4">
+                        <h4 class="h5 fw-bold mb-3">Quick Links</h4>
+                        <nav aria-label="Footer Navigation">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#home" class="footer-link text-white text-decoration-none">Home</a></li>
+                                <li class="mb-2"><a href="#doctors" class="footer-link text-white text-decoration-none">Doctors</a></li>
+                                <li class="mb-2"><a href="#services" class="footer-link text-white text-decoration-none">Services</a></li>
+                                <li class="mb-2"><a href="#appointment" class="footer-link text-white text-decoration-none">Appointment</a></li>
+                                <li class="mb-2"><a href="#contact" class="footer-link text-white text-decoration-none">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                      </div>
+
+                      <!-- Column 3: Contact Info -->
+
+                      <div class="col-md-4">
+                            <h4 class="h5 fw-bold mb-3">Contact Info</h4>
+                            <address class="mb-3">
+                                <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Hyderabad, Telangana</p>
+                                <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>+91 987654321</p>
+                                <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>medicare@gmail.com</p>
+                            </address>
+
+                            <div class="social-icons d-flex gap-3 fs-4 mt-3">
+                                <a href="#" class="text-white " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-white " aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-white " aria-label="X"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-white " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-white " aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                      </div>
+
+                </div>
+                <hr class="border-light opacity-25 my-4">
+
+                <div class="text-center">
+                    <p class="mb-0 small">&copy; 2026 MediCare Hospital | All Rights Reserved</p>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
