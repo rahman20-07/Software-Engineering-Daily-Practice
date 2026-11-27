@@ -65,14 +65,7 @@ Each mini project is an opportunity to understand and apply specific frontend co
 | Custom CSS | Component customization, hover effects, transitions, and visual consistency. |
 | Basic JavaScript | DOM manipulation, event handling, form validation, and simple interactions. |
 | Responsive Design | Building pages that adapt to mobile, tablet, and desktop screens. |
-
-## Projects
-
-This section contains the mini web pages and practice projects developed as part of my daily learning.
-
-| Project | Description |
-|---|---|
-| MediCare Hospital Website | A responsive healthcare landing page featuring a navigation bar, services, doctor profiles, hospital statistics, and an appointment form. |
+|---|
 
 More projects will be added as I continue practicing and learning new concepts.
 
